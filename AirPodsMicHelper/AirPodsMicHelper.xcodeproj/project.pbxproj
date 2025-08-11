@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		346E45532E49D9CD0063E951 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 346E453A2E49D9CB0063E951 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 346E45412E49D9CB0063E951;
+			remoteInfo = AirPodsMicHelper;
+		};
+		346E455D2E49D9CD0063E951 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 346E453A2E49D9CB0063E951 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 346E45412E49D9CB0063E951;
+			remoteInfo = AirPodsMicHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		346E45422E49D9CB0063E951 /* AirPodsMicHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirPodsMicHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		346E45522E49D9CD0063E951 /* AirPodsMicHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirPodsMicHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		346E455C2E49D9CD0063E951 /* AirPodsMicHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirPodsMicHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		346E45442E49D9CB0063E951 /* AirPodsMicHelper */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AirPodsMicHelper;
+			sourceTree = "<group>";
+		};
+		346E45552E49D9CD0063E951 /* AirPodsMicHelperTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AirPodsMicHelperTests;
+			sourceTree = "<group>";
+		};
+		346E455F2E49D9CD0063E951 /* AirPodsMicHelperUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AirPodsMicHelperUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		346E453F2E49D9CB0063E951 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		346E454F2E49D9CD0063E951 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		346E45592E49D9CD0063E951 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		346E45392E49D9CB0063E951 = {
+			isa = PBXGroup;
+			children = (
+				346E45442E49D9CB0063E951 /* AirPodsMicHelper */,
+				346E45552E49D9CD0063E951 /* AirPodsMicHelperTests */,
+				346E455F2E49D9CD0063E951 /* AirPodsMicHelperUITests */,
+				346E45432E49D9CB0063E951 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		346E45432E49D9CB0063E951 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				346E45422E49D9CB0063E951 /* AirPodsMicHelper.app */,
+				346E45522E49D9CD0063E951 /* AirPodsMicHelperTests.xctest */,
+				346E455C2E49D9CD0063E951 /* AirPodsMicHelperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		346E45412E49D9CB0063E951 /* AirPodsMicHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 346E45662E49D9CD0063E951 /* Build configuration list for PBXNativeTarget "AirPodsMicHelper" */;
+			buildPhases = (
+				346E453E2E49D9CB0063E951 /* Sources */,
+				346E453F2E49D9CB0063E951 /* Frameworks */,
+				346E45402E49D9CB0063E951 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				346E45442E49D9CB0063E951 /* AirPodsMicHelper */,
+			);
+			name = AirPodsMicHelper;
+			packageProductDependencies = (
+			);
+			productName = AirPodsMicHelper;
+			productReference = 346E45422E49D9CB0063E951 /* AirPodsMicHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		346E45512E49D9CD0063E951 /* AirPodsMicHelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 346E45692E49D9CD0063E951 /* Build configuration list for PBXNativeTarget "AirPodsMicHelperTests" */;
+			buildPhases = (
+				346E454E2E49D9CD0063E951 /* Sources */,
+				346E454F2E49D9CD0063E951 /* Frameworks */,
+				346E45502E49D9CD0063E951 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				346E45542E49D9CD0063E951 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				346E45552E49D9CD0063E951 /* AirPodsMicHelperTests */,
+			);
+			name = AirPodsMicHelperTests;
+			packageProductDependencies = (
+			);
+			productName = AirPodsMicHelperTests;
+			productReference = 346E45522E49D9CD0063E951 /* AirPodsMicHelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		346E455B2E49D9CD0063E951 /* AirPodsMicHelperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 346E456C2E49D9CD0063E951 /* Build configuration list for PBXNativeTarget "AirPodsMicHelperUITests" */;
+			buildPhases = (
+				346E45582E49D9CD0063E951 /* Sources */,
+				346E45592E49D9CD0063E951 /* Frameworks */,
+				346E455A2E49D9CD0063E951 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				346E455E2E49D9CD0063E951 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				346E455F2E49D9CD0063E951 /* AirPodsMicHelperUITests */,
+			);
+			name = AirPodsMicHelperUITests;
+			packageProductDependencies = (
+			);
+			productName = AirPodsMicHelperUITests;
+			productReference = 346E455C2E49D9CD0063E951 /* AirPodsMicHelperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		346E453A2E49D9CB0063E951 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					346E45412E49D9CB0063E951 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					346E45512E49D9CD0063E951 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 346E45412E49D9CB0063E951;
+					};
+					346E455B2E49D9CD0063E951 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 346E45412E49D9CB0063E951;
+					};
+				};
+			};
+			buildConfigurationList = 346E453D2E49D9CB0063E951 /* Build configuration list for PBXProject "AirPodsMicHelper" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 346E45392E49D9CB0063E951;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 346E45432E49D9CB0063E951 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				346E45412E49D9CB0063E951 /* AirPodsMicHelper */,
+				346E45512E49D9CD0063E951 /* AirPodsMicHelperTests */,
+				346E455B2E49D9CD0063E951 /* AirPodsMicHelperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		346E45402E49D9CB0063E951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		346E45502E49D9CD0063E951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		346E455A2E49D9CD0063E951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		346E453E2E49D9CB0063E951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		346E454E2E49D9CD0063E951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		346E45582E49D9CD0063E951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		346E45542E49D9CD0063E951 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 346E45412E49D9CB0063E951 /* AirPodsMicHelper */;
+			targetProxy = 346E45532E49D9CD0063E951 /* PBXContainerItemProxy */;
+		};
+		346E455E2E49D9CD0063E951 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 346E45412E49D9CB0063E951 /* AirPodsMicHelper */;
+			targetProxy = 346E455D2E49D9CD0063E951 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		346E45642E49D9CD0063E951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = AQH9WKMUGF;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		346E45652E49D9CD0063E951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AQH9WKMUGF;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		346E45672E49D9CD0063E951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AirPodsMicHelper/AirPodsMicHelper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQH9WKMUGF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = webcastle.AirPodsMicHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		346E45682E49D9CD0063E951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AirPodsMicHelper/AirPodsMicHelper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQH9WKMUGF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = webcastle.AirPodsMicHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		346E456A2E49D9CD0063E951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQH9WKMUGF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = webcastle.AirPodsMicHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirPodsMicHelper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AirPodsMicHelper";
+			};
+			name = Debug;
+		};
+		346E456B2E49D9CD0063E951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQH9WKMUGF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = webcastle.AirPodsMicHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirPodsMicHelper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AirPodsMicHelper";
+			};
+			name = Release;
+		};
+		346E456D2E49D9CD0063E951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQH9WKMUGF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = webcastle.AirPodsMicHelperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = AirPodsMicHelper;
+			};
+			name = Debug;
+		};
+		346E456E2E49D9CD0063E951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQH9WKMUGF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = webcastle.AirPodsMicHelperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = AirPodsMicHelper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		346E453D2E49D9CB0063E951 /* Build configuration list for PBXProject "AirPodsMicHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				346E45642E49D9CD0063E951 /* Debug */,
+				346E45652E49D9CD0063E951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		346E45662E49D9CD0063E951 /* Build configuration list for PBXNativeTarget "AirPodsMicHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				346E45672E49D9CD0063E951 /* Debug */,
+				346E45682E49D9CD0063E951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		346E45692E49D9CD0063E951 /* Build configuration list for PBXNativeTarget "AirPodsMicHelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				346E456A2E49D9CD0063E951 /* Debug */,
+				346E456B2E49D9CD0063E951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		346E456C2E49D9CD0063E951 /* Build configuration list for PBXNativeTarget "AirPodsMicHelperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				346E456D2E49D9CD0063E951 /* Debug */,
+				346E456E2E49D9CD0063E951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 346E453A2E49D9CB0063E951 /* Project object */;
+}
