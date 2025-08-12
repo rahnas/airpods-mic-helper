@@ -15,12 +15,12 @@ let package = Package(
         )
     ],
     dependencies: [
-        // Add any external dependencies here
+        .package(url: "https://github.com/nhurden/MediaKeyTap.git", from: "2.2.0")
     ],
     targets: [
         .executableTarget(
             name: "AirPodsMicHelper",
-            dependencies: [],
+            dependencies: ["MediaKeyTap"],
             path: "Sources/AirPodsMicHelper",
             linkerSettings: [
                 .linkedFramework("Cocoa"),

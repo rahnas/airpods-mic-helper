@@ -12,21 +12,32 @@ import AppKit
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     private var statusBarController: StatusBarController?
+    private var audioController: AudioController?
     
     func applicationDidFinishLaunching(_ notification: Notification) {
         // Hide dock icon for menu bar-only app
         NSApp.setActivationPolicy(.accessory)
         
-        // Initialize status bar controller
-        statusBarController = StatusBarController()
+        // Request accessibility permissions for AirPods button detection
+        requestAccessibilityPermissions()
+        
+        // Initialize audio controller
+        audioController = AudioController()
+        
+        // Request microphone permission
+        audioController?.requestMicrophonePermission()
+        
+        // Initialize status bar controller and connect it to audio controller
+        statusBarController = StatusBarController(audioController: audioController!)
         statusBarController?.setupStatusItem()
         
-        // Prevent app from terminating when last window is closed
-        NSApp.servicesMenuSendTypes = []
+        // Make app eligible for remote control events
+        NSApplication.shared.activate(ignoringOtherApps: true)
     }
     
     func applicationWillTerminate(_ notification: Notification) {
         // Clean up resources
+        audioController?.cleanup()
         statusBarController?.cleanup()
     }
     
@@ -37,6 +48,30 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
         return true
+    }
+    
+    private func requestAccessibilityPermissions() {
+        let options = [kAXTrustedCheckOptionPrompt.takeRetainedValue(): true]
+        let accessibilityEnabled = AXIsProcessTrustedWithOptions(options as CFDictionary)
+        
+        if !accessibilityEnabled {
+            print("[AppDelegate] ⚠️ Accessibility access required for AirPods button detection")
+            
+            let alert = NSAlert()
+            alert.messageText = "Accessibility Access Required"
+            alert.informativeText = "This app needs accessibility access to detect AirPods button presses. Please enable it in System Preferences > Security & Privacy > Privacy > Accessibility."
+            alert.addButton(withTitle: "OK")
+            alert.addButton(withTitle: "Open System Preferences")
+            
+            let response = alert.runModal()
+            if response == .alertSecondButtonReturn {
+                // Open System Preferences
+                let url = URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_Accessibility")!
+                NSWorkspace.shared.open(url)
+            }
+        } else {
+            print("[AppDelegate] ✅ Accessibility permissions granted")
+        }
     }
 }
 

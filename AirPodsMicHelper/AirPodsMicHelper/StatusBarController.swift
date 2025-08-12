@@ -16,21 +16,31 @@ class StatusBarController: NSObject {
     private var statusBar: NSStatusBar
     private var statusItem: NSStatusItem?
     private var menu: NSMenu
-    private var isMuted: Bool = false
+    private var audioController: AudioController
+    private var statusWindow: StatusWindow?
     
     // Icons for different states
     private let micActiveIcon = NSImage(systemSymbolName: "mic.fill", accessibilityDescription: "Microphone Active")
     private let micMutedIcon = NSImage(systemSymbolName: "mic.slash.fill", accessibilityDescription: "Microphone Muted")
     
     // MARK: - Initialization
-    override init() {
+    init(audioController: AudioController) {
         statusBar = NSStatusBar.system
         menu = NSMenu()
+        self.audioController = audioController
         
         super.init()
         
         // Configure menu
         setupMenu()
+        
+        // Listen for audio state changes
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(audioStateChanged),
+            name: .audioStateChanged,
+            object: nil
+        )
     }
     
     // MARK: - Status Item Setup
@@ -80,6 +90,11 @@ class StatusBarController: NSObject {
         // Separator
         menu.addItem(NSMenuItem.separator())
         
+        // Show status window item
+        let showStatusItem = NSMenuItem(title: "Show Status Window", action: #selector(showStatusWindow), keyEquivalent: "s")
+        showStatusItem.target = self
+        menu.addItem(showStatusItem)
+        
         // About item
         let aboutItem = NSMenuItem(title: "About AirPods Mic Helper", action: #selector(showAbout), keyEquivalent: "")
         aboutItem.target = self
@@ -91,10 +106,18 @@ class StatusBarController: NSObject {
         menu.addItem(quitItem)
     }
     
+    // MARK: - Audio State Handling
+    @objc private func audioStateChanged() {
+        DispatchQueue.main.async { [weak self] in
+            self?.updateStatusIcon()
+        }
+    }
+    
     // MARK: - Status Icon Update
     private func updateStatusIcon() {
         guard let button = statusItem?.button else { return }
         
+        let isMuted = audioController.isMuted
         if isMuted {
             button.image = micMutedIcon
             button.toolTip = "AirPods Mic Helper - Microphone Muted (Click to unmute)"
@@ -121,23 +144,8 @@ class StatusBarController: NSObject {
     }
     
     private func getMicStatusText() -> String {
+        let isMuted = audioController.isMuted
         return isMuted ? "🔇 Microphone: Muted" : "🎤 Microphone: Active"
-    }
-    
-    // MARK: - Microphone Control
-    private func setMicrophoneMuted(_ muted: Bool) {
-        // TODO: Implement actual microphone muting logic
-        // This would integrate with Core Audio or AVAudioSession
-        // For now, we'll just update the UI state
-        
-        isMuted = muted
-        updateStatusIcon()
-        
-        // Log state change
-        print("Microphone \(muted ? "muted" : "unmuted")")
-        
-        // TODO: Send state update to Chrome extension via Native Messaging
-        // This would be implemented in the NativeMessaging module
     }
     
     // MARK: - Actions
@@ -146,7 +154,14 @@ class StatusBarController: NSObject {
     }
     
     @objc private func toggleMute() {
-        setMicrophoneMuted(!isMuted)
+        audioController.toggleMute()
+    }
+    
+    @objc private func showStatusWindow() {
+        if statusWindow == nil {
+            statusWindow = StatusWindow(audioController: audioController)
+        }
+        statusWindow?.showWindow()
     }
     
     @objc private func showAbout() {
@@ -178,16 +193,16 @@ extension StatusBarController {
     
     /// Get current mute state
     var isMicrophoneMuted: Bool {
-        return isMuted
+        return audioController.isMuted
     }
     
     /// Set mute state programmatically (for external control)
     func setMuteState(_ muted: Bool) {
-        setMicrophoneMuted(muted)
+        audioController.setMute(muted)
     }
     
     /// Toggle mute state programmatically
     func toggleMuteState() {
-        toggleMute()
+        audioController.toggleMute()
     }
 }

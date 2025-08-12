@@ -17,7 +17,7 @@
   <key>CFBundlePackageType</key>
   <string>APPL</string>
   <key>NSMicrophoneUsageDescription</key>
-  <string>This app needs microphone access to monitor and switch between AirPods microphones.</string>
+  <string>AirPods Mic Helper needs microphone access to control microphone mute/unmute functionality and detect AirPods gesture controls. This allows the app to toggle microphone settings and provide status feedback.</string>
   <key>LSUIElement</key>
   <true/>
   <key>NSPrincipalClass</key>
